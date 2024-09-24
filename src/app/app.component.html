@@ -1,0 +1,172 @@
+<div class="fixed bg-teal-500 w-full p-4 flex items-center justify-between shadow-md">
+  <div class="flex items-center space-x-4 w-full sm:w-3/4">
+    <h1 class="text-2xl font-bold text-white">Fernando Sangopanta</h1>
+    <theme-switcher></theme-switcher>
+  </div>
+  <nav class="hidden sm:flex sm:justify-center">
+    <ng-container *ngFor="let item of navItems">
+      <a
+        [href]="item.href"
+        class="block p-2 m-2 text-center bg-gray-200 rounded hover:bg-gray-300 transition duration-300"
+      >
+        {{ item.label }}
+      </a>
+    </ng-container>
+  </nav>
+  <button (click)="toggleMenu()" class="block sm:hidden p-2 text-white rounded bg-teal-600 hover:bg-teal-700 transition duration-300">
+    <mat-icon>menu</mat-icon>
+  </button>
+</div>
+
+<!-- Overlay y Menú (para móviles) -->
+<div *ngIf="isVisible" class="fixed inset-0 z-10 bg-black opacity-50 transition-opacity duration-300" (click)="toggleMenu()"></div>
+<div *ngIf="isVisible" class="fixed bg-teal-400 w-full p-4 flex flex-col items-center justify-between z-20 transition-transform transform duration-300 ease-in-out"
+     [ngClass]="{'translate-y-0 opacity-100': isVisible, 'translate-y-full opacity-0': !isVisible}">
+  <button (click)="toggleMenu()" class="p-2 text-white rounded bg-teal-600 ml-auto">
+    <mat-icon>close</mat-icon>
+  </button>
+  <div class="flex flex-col gap-4">
+    <ng-container *ngFor="let item of navItems">
+      <a
+        [href]="item.href"
+        (click)="toggleMenu()"
+        class="block p-2 m-2 text-center bg-gray-200 rounded hover:bg-gray-300 transition duration-300"
+      >
+        {{ item.label }}
+      </a>
+    </ng-container>
+  </div>
+</div>
+
+
+<!-- Menú de navegación para pantallas grandes -->
+
+
+
+
+
+
+<section id="about-me"></section>
+<section id="experience">
+  <img src="/assets/moon.png" alt="" />
+</section>
+<section id="skills">
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt culpa hic
+    numquam nesciunt magnam! Blanditiis autem cum culpa sapiente ex deserunt
+    delectus explicabo, consequatur fuga tempore porro nobis beatae. Vel?
+  </p>
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt culpa hic
+    numquam nesciunt magnam! Blanditiis autem cum culpa sapiente ex deserunt
+    delectus explicabo, consequatur fuga tempore porro nobis beatae. Vel?
+  </p>
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt culpa hic
+    numquam nesciunt magnam! Blanditiis autem cum culpa sapiente ex deserunt
+    delectus explicabo, consequatur fuga tempore porro nobis beatae. Vel?
+  </p>
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt culpa hic
+    numquam nesciunt magnam! Blanditiis autem cum culpa sapiente ex deserunt
+    delectus explicabo, consequatur fuga tempore porro nobis beatae. Vel?
+  </p>
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt culpa hic
+    numquam nesciunt magnam! Blanditiis autem cum culpa sapiente ex deserunt
+    delectus explicabo, consequatur fuga tempore porro nobis beatae. Vel?
+  </p>
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt culpa hic
+    numquam nesciunt magnam! Blanditiis autem cum culpa sapiente ex deserunt
+    delectus explicabo, consequatur fuga tempore porro nobis beatae. Vel?
+  </p>
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt culpa hic
+    numquam nesciunt magnam! Blanditiis autem cum culpa sapiente ex deserunt
+    delectus explicabo, consequatur fuga tempore porro nobis beatae. Vel?
+  </p>
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt culpa hic
+    numquam nesciunt magnam! Blanditiis autem cum culpa sapiente ex deserunt
+    delectus explicabo, consequatur fuga tempore porro nobis beatae. Vel?
+  </p>
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt culpa hic
+    numquam nesciunt magnam! Blanditiis autem cum culpa sapiente ex deserunt
+    delectus explicabo, consequatur fuga tempore porro nobis beatae. Vel?
+  </p>
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt culpa hic
+    numquam nesciunt magnam! Blanditiis autem cum culpa sapiente ex deserunt
+    delectus explicabo, consequatur fuga tempore porro nobis beatae. Vel?
+  </p>
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt culpa hic
+    numquam nesciunt magnam! Blanditiis autem cum culpa sapiente ex deserunt
+    delectus explicabo, consequatur fuga tempore porro nobis beatae. Vel?
+  </p>
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt culpa hic
+    numquam nesciunt magnam! Blanditiis autem cum culpa sapiente ex deserunt
+    delectus explicabo, consequatur fuga tempore porro nobis beatae. Vel?
+  </p>
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt culpa hic
+    numquam nesciunt magnam! Blanditiis autem cum culpa sapiente ex deserunt
+    delectus explicabo, consequatur fuga tempore porro nobis beatae. Vel?
+  </p>
+
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt culpa hic
+    numquam nesciunt magnam! Blanditiis autem cum culpa sapiente ex deserunt
+    delectus explicabo, consequatur fuga tempore porro nobis beatae. Vel?
+  </p>
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt culpa hic
+    numquam nesciunt magnam! Blanditiis autem cum culpa sapiente ex deserunt
+    delectus explicabo, consequatur fuga tempore porro nobis beatae. Vel?
+  </p>
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt culpa hic
+    numquam nesciunt magnam! Blanditiis autem cum culpa sapiente ex deserunt
+    delectus explicabo, consequatur fuga tempore porro nobis beatae. Vel?
+  </p>
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt culpa hic
+    numquam nesciunt magnam! Blanditiis autem cum culpa sapiente ex deserunt
+    delectus explicabo, consequatur fuga tempore porro nobis beatae. Vel?
+  </p>
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt culpa hic
+    numquam nesciunt magnam! Blanditiis autem cum culpa sapiente ex deserunt
+    delectus explicabo, consequatur fuga tempore porro nobis beatae. Vel?
+  </p>
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt culpa hic
+    numquam nesciunt magnam! Blanditiis autem cum culpa sapiente ex deserunt
+    delectus explicabo, consequatur fuga tempore porro nobis beatae. Vel?
+  </p>
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt culpa hic
+    numquam nesciunt magnam! Blanditiis autem cum culpa sapiente ex deserunt
+    delectus explicabo, consequatur fuga tempore porro nobis beatae. Vel?
+  </p>
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt culpa hic
+    numquam nesciunt magnam! Blanditiis autem cum culpa sapiente ex deserunt
+    delectus explicabo, consequatur fuga tempore porro nobis beatae. Vel?
+  </p>
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt culpa hic
+    numquam nesciunt magnam! Blanditiis autem cum culpa sapiente ex deserunt
+    delectus explicabo, consequatur fuga tempore porro nobis beatae. Vel?
+  </p>
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt culpa hic
+    numquam nesciunt magnam! Blanditiis autem cum culpa sapiente ex deserunt
+    delectus explicabo, consequatur fuga tempore porro nobis beatae. Vel?
+  </p>
+</section>
+
+<router-outlet></router-outlet>
